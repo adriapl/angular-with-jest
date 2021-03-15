@@ -4,8 +4,10 @@
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
-      "jasmine"
-    ]
+      "jest"
+    ],
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true // Para que funcione la inyección de dependencia en Jest
   },
   "files": [
     "src/test.ts",
